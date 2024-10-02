@@ -1,0 +1,354 @@
+
+/*BEGIN Mobile 7.0 fonts */
+@font-face {
+	font-family: SFDisplayReg;
+	src: url('../fonts/SF-UI-Display-Regular.otf');
+}
+@font-face {
+	font-family: SFDisplayBold;
+	src: url('../fonts/SF-UI-Display-Bold.otf');
+}
+@font-face {
+	font-family: SFTextRegular;
+	src: url('../fonts/SF-UI-Text-Regular.otf');
+}
+@font-face {
+	font-family: SFTextBold;
+	src: url('../fonts/SF-UI-Text-Bold.otf');
+}
+@font-face {
+	font-family: SFDisplayThin;
+	src: url('../fonts/SF-UI-Display-Thin.otf'),
+	url('../fonts/SF-UI-Display-Thin.eot');
+}
+
+/*Android*/
+@font-face {
+	font-family: RobotoRegular;
+	src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+	font-family: RobotoBold;
+	src: url('../fonts/Roboto-Bold.ttf');
+}
+/*Android*/
+
+
+
+/*END Mobile 7.0 fonts */
+
+body {
+	font-family: "SFDisplayReg", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 1em;
+	font-style: inherit;
+	margin:0;
+	/*padding: 20px;*/
+}
+p {
+	font-size: 14px;
+}
+ul, ol {
+	margin: 1.5em 0;
+	padding: 0 1em;
+}
+li {
+	font-size: 14px;
+	padding-bottom: 13px;
+}
+
+.iPhone_frame {
+	background: url("../../images/iphone_6_background.jpg") 0 0;
+	display: block;
+	position: relative;
+	left:0;
+	width: 428px;
+	height: 881px;
+	margin: 0 auto;
+}
+.iPhone_frame iframe {
+	border: none;
+ position: absolute;
+ top: 107px;
+ left: 26px;
+ width: 375px;
+ height: 667px;
+ overflow:hidden!important;
+}
+
+.android_frame {
+	background: url("../../images/galaxy_s5_background.jpg") 0 0;
+	display: block;
+	position: relative;
+	left:0;
+	width: 424px;
+	height: 845px;
+	margin: 0 auto;
+}
+.android_frame iframe {
+	border: none;
+ position: absolute;
+ top: 104px;
+ left: 33px;
+ width: 360px;
+ height: 640px;
+ overflow:hidden!important;
+}
+
+
+@media (max-width: 660px) {
+.disclosure {
+	z-index:-1;
+}
+}
+
+.key_user_terms {
+	width: 250px;
+	position: absolute;
+	top: 8%;
+	left: 70%;
+	text-align: left;
+	padding: 20px;
+	z-index:-1;
+}
+
+.disclosure {
+	display: block;
+	width: 310px;
+	position: absolute;
+	top: 65%;
+	left: 69%;
+	text-align: center;
+	
+}
+.disclosure p.states {
+    text-align: left;
+    padding-left: 25px;
+}
+.disclosure a.bac_button.blue {
+	width: 260px;
+}
+.disclosure a.erica_qrg {
+    text-decoration: none !important;
+    color: #D71417;
+    font-size: 0.85em;
+}
+.disclosure a,
+.disclosure a#termsTrigger {
+	text-decoration: none !important;
+}
+
+.disclosure a#termsTrigger, .disclosure a#additional_resources_FC, .disclosure a#additional_resources_CC {
+	text-decoration: none !important;
+	color: #D71417;
+	font-size: 0.85em;
+}
+
+#termsContainer {
+	display: none;
+	padding:10px;
+	text-align: left;
+	background-color: #f9f7f4;
+	color: #666;
+   font-size: 0.75em;
+}
+
+a {
+	color: #4072AA;
+	font-weight: inherit;
+	text-shadow: none;
+	text-decoration: none;
+}
+a#termsContainer  {
+	color: #2182cb;
+}
+
+.fp_quad_sample {
+	width: 158px;
+	height: 106px;
+	margin-bottom: 8px;
+	background-color: #ede7dd;
+	text-align: center;
+	font-size:12px;
+ }
+#sound_ctrl {
+    width: 260px;
+    margin: 0 auto;
+}
+#sound_ctrl a.sound_button {
+    line-height: 0;
+	display: inline-block;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5.35px;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+}
+#sound_ctrl a.sound_button.on {
+	color:#000;
+	border-color: #333;
+}
+#sound_ctrl a.sound_button.muted {
+	color:#D71417;
+	border-color: #D71417;
+}
+#sound_ctrl img {
+	float:left;
+	padding: 3px 0 0 20px;
+}
+#sound_ctrl p {
+	float: left;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+/* New iPhone/Android Desktop Styles */
+
+#device {
+	position: relative;
+	height:881px;
+	width:428px;
+	margin: 0 auto;
+}
+#device iframe {
+	border: none;
+    position: absolute;
+    overflow: hidden!important;
+}
+#device iframe.iphone {
+    top: 26px;
+    left: 29px;
+	height: 812px;
+    width: 375px;
+}
+#device iframe.android {
+    top: 101px;
+    left: 29px;
+    height: 640px;
+    width: 360px;
+}
+#device img, #device div {
+	position: absolute;
+	-webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+img.iphone_top_blk {
+    top: 2px;
+}
+img.iphone_bottom {
+    position: absolute;
+    top: 805px;
+}
+#iphone_device_shadow {
+	opacity:1;
+	position: absolute;
+	height: 860px;
+    width: 430px;
+	margin: 2px auto;
+	-webkit-box-shadow: 5px 5px 15px #797979;
+    -moz-box-shadow: 5px 5px 15px #797979;
+    box-shadow: 5px 5px 15px #797979;
+	border-radius:65px;
+}
+#android_device_shadow {
+	opacity:0;
+	position: absolute;
+	height: 838px;
+    width: 414px;
+	margin: 2px auto;
+	-webkit-box-shadow: 5px 5px 30px #000;
+    -moz-box-shadow: 5px 5px 30px #000;
+    box-shadow: 5px 5px 30px #000;
+	border-radius:65px;
+}
+#device img.shadow {
+    -webkit-box-shadow: 5px 5px 30px #000;
+    -moz-box-shadow: 5px 5px 30px #000;
+    box-shadow: 5px 5px 30px #000;
+    margin-bottom: 10px;
+	-webkit-border-radius: 65px; 
+	-moz-border-radius: 65px; 
+	border-radius:65px;
+}
+#device .transparent {
+	opacity:0;
+    -webkit-transform:scale(0,0);
+    -webkit-transform-origin: bottom left;
+    -moz-transform:scale(0,0);
+    -moz-transform-origin: bottom left;
+    -o-transform:scale(0,0);
+    -o-transform-origin: bottom left;
+    transform:scale(0,0);
+    transform-origin: bottom left;
+}
+#device .displayed {
+    opacity:1;
+    -webkit-transform:scale(1,1);
+    -webkit-transform-origin: top right;
+    -moz-transform:scale(1,1);
+    -moz-transform-origin: top right;
+    -o-transform:scale(1,1);
+    -o-transform-origin: top right;
+    transform:scale(1,1);
+    transform-origin: top right;
+}
+#mobile_banking_disclaimer.disclaimer {
+	display: block;
+    background: #676767;
+    height: 16px;
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    line-height: 15px;
+	width:100%;
+	margin-bottom:10px;
+}
+#sim_select {
+    display: block;
+    width: 260px;
+    position: absolute;
+    top: 45%;
+    right: 69%;
+    text-align: center;
+	margin: 15px;
+}
+#device_ctrl {
+    
+}
+#sim_select a.device_btn {
+    line-height: 0;
+    display: inline-block;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5.35px;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+	color: #fff!important;
+    background-color: #0052C2;
+}
+#sim_select a.device_btn_off {
+	display: none;
+}
+#sim_select a.device_btn_on {
+	display: inline-block;
+}
+h1.desktop_title {
+	font-family: "SFDisplayThin", Helvetica, Arial, "Lucida Grande", sans-serif;
+    display: block;
+    width: 260px;
+    position: absolute;
+    top: 40%;
+    right: 69%;
+    text-align: center;
+    margin: 15px;
+    font-size: 26px;
+	text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.2);
+}
+	

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dashboard</title>
+   <style>
+    /* General reset and styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.menu-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.header-actions div {
+    margin-left: 20px;
+    position: relative;
+    font-size: 14px;
+}
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+/* Tabs styling */
+.tabs {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tab.active {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.notification-icon {
+    position: relative;
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    padding: 20px;
+}
+
+/* Account Section */
+.account-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-info h2 {
+    margin: 0;
+    color: black;
+}
+
+.user-info p {
+    color: gray;
+    font-size: 14px;
+}
+
+.account-actions .action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-top: 1px solid #eaeaea;
+    cursor: pointer;
+}
+
+.account-actions .icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.account-actions p {
+    font-size: 12px;
+    color: gray;
+}
+
+/* Banking Section */
+.banking-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.banking-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banking-header h3 {
+    margin: 0;
+    color: black;
+}
+
+.total-balance {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.bank-accounts {
+    margin-top: 10px;
+}
+
+.account-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #eaeaea;
+}
+
+.account-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.show-net-worth {
+    text-align: right;
+    color: blue;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Footer Navigation */
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-nav .nav-item {
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+    cursor: pointer;
+}
+
+   </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="menu-icon">☰ Menu</div>
+        <div class="header-actions">
+            <div class="mail-icon">Mail<span class="badge">1</span></div>
+            <div class="cart-icon">Products</div>
+            <div class="logout-icon">Log Out</div>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs">
+        <div class="tab active">Accounts</div>
+        <div class="tab">Dashboard</div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="How can we help?">
+            <div class="notification-icon">🔔<span class="badge">1</span></div>
+        </div>
+
+        <!-- Account Section -->
+        <div class="account-section">
+            <div class="user-info">
+                <h2>Hello, Robin</h2>
+                <p>Preferred Rewards Platinum Member</p>
+            </div>
+            <div class="account-actions">
+                <div class="action">
+                    <span class="icon">▶</span>
+                    <span>Bank of America Life Plan<sup>®</sup></span>
+                    <p>Your next steps are ready. Let's go!</p>
+                </div>
+                <div class="action">
+                    <span class="icon">🏆</span>
+                    <span>My Rewards</span>
+                </div>
+                <div class="action">
+                    <span class="icon">📞</span>
+                    <span>Contact Us</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Banking Section -->
+        <div class="banking-section">
+            <div class="banking-header">
+                <h3>Banking</h3>
+                <span class="total-balance">$4,609.80</span>
+            </div>
+            <div class="bank-accounts">
+                <div class="account-item">
+                    <span>BANK OF AMERICA</span>
+                    <div class="account-details">
+                        <span>My Checking - 1234</span>
+                        <span>$2,146.13</span>
+                    </div>
+                </div>
+                <div class="account-item">
+                    <span>Savings - 9876</span>
+                    <span>$2,463.67</span>
+                </div>
+            </div>
+            <div class="show-net-worth">Show Net Worth</div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-nav">
+        <div class="nav-item">🏦 Accounts</div>
+        <div class="nav-item">💸 Pay & Transfer</div>
+        <div class="nav-item">📄 Deposit Checks</div>
+        <div class="nav-item">📈 Trade</div>
+    </footer>
+
+</body>
+</html>

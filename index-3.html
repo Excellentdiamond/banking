@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<!-- Bank of America Mobile Simulator (iOS) v.24.02 -  3/2024 -->
+<!-- Experience Design Technologists: Derek Barton, Myquan Duong, Brian Murphy & Shams Shirley -->
+
+<!-- Mirrored from message.bankofamerica.com/onlinebanking_demo/mobileApp_Simulator/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Sep 2024 22:44:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head> 
+<meta http-equiv="x-ua-compatible" content="IE=Edge"/>
+	<title>Mobile Banking Simulator</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<script src="common/js/jquery-3.7.0.min.js"></script>
+<link rel="stylesheet" href="common/css/buttons.css" type="text/css" />
+<link rel="stylesheet" href="common/css/toolkit.css" type="text/css" />
+<link rel="stylesheet" href="common/css/desktop_max.css" type="text/css" />
+
+</head>
+<body>
+    <div id="mobile_banking_disclaimer" class="disclaimer">
+        The Mobile Banking Simulator is intended for demonstration purposes only.
+    </div>
+    <div id="device">
+        <img class="iphone" src="images/iPhoneX.png" height="864px" width="431px" alt="iPhone X" />
+        <div id="iphone_device_shadow" class="displayed"></div>
+        <iframe src="index-2.html" name="device_iframe" id="device_iframe" class="iphone" sandbox="allow-forms allow-scripts allow-same-origin"></iframe>
+		<!--<img class="iphone" src="/onlinebanking_demo/mobileApp_Simulator/images/iPhoneX.png" height="864px" width="431px" alt="iPhone X" />-->
+		<img class="iphone_top_blk" src="images/iPhoneX_top_blk.png" height="67" width="431" alt="iPhone X" />
+		<img class="iphone_bottom" src="images/iPhoneX_bottom.png" height="62" width="431" alt="iPhone X" />
+    </div>
+
+<!--BEGIN IE User Message-->
+<div class="ie_user_message">
+	<p class="bolder">Internet Explorer Users:</p>
+   <p>If you are having trouble accessing the Mobile Banking Simulator using Internet Explorer, please copy the <a href="index-3.html">MB Simulator page web address (URL) </a>and open in a Google Chrome browser. 
+	   
+	   <br/>&nbsp;<br/> <b><i>Right-click</b></i> on the link and <b><i>Select</i></b> "Copy shortcut".</p>
+	</div>
+<!--END IE User Message-->
+	
+    <div class="key_user_terms">
+	<p><strong>User Note on simulator links:</strong></p>
+   <p>Inactive links, features not available, and user shortcuts (look inactive, but work) will all be grayed out in the app.</p>
+
+ <p><strong>Here are some examples:</strong></p>
+ 
+	<div class="clear float_left">
+   	<div class="float_left"> 
+		  <strong>Active</strong><br />
+		</div>
+   	<div class="fp_quad_sample clear"> 
+			<img class="center margin_top_15" src="images/icons/icon_calendar_low_res%402x.png" width="30" height="28" />
+      	<p class="black bold font_13px">Schedule an<br />Appointment</p>
+	   </div>
+	</div>
+   <div class="clear float_left">
+   	<div class="float_left"> 
+		  <strong>Inactive</strong><br />
+		</div>
+		<div class="fp_quad_sample clear inactive">
+    		<img class="center margin_top_10" src="modules/signin/images/icon_whats_new%402x.png" width="25" height="41" />
+    		<p class="black inactive bold font_13px">What's New<br />in the App</p>
+   	</div>
+	</div>
+
+</div>
+
+
+	<div class="disclosure">
+
+		<p>
+        	<a href="https://message.bankofamerica.com/onlinebanking_demo/OLB_Simulator/index.html" class="bac_button blue" target="_blank" rel="noopener noreferrer">Online Banking Simulator</a>
+        </p>
+    
+        <!-- Device Mute Controls for Erica Addition -->
+        <div id="sound_ctrl">
+            <a href="Javascript:void(0);" class="sound_button on" onclick="document.getElementById('device_iframe').contentWindow.Howler.mute(true);">
+                <img height="22" width="22" src="images/icons/desktop_sound_on.png">
+                <p>Mute Desktop Device</p>
+            </a>
+            <a href="Javascript:void(0);" class="sound_button muted" onclick="document.getElementById('device_iframe').contentWindow.Howler.mute(false);">
+                <img height="22" width="22" src="images/icons/desktop_sound_off.png">
+                <p>Unmute Desktop Device</p>
+            </a>
+        </div>
+    
+    
+    	<p><a id="termsTrigger" href="#">Terms &amp; Conditions</a></p>
+
+    	<div id="termsContainer">
+			Mobile Banking requires that you download the Mobile Banking app and is only available for select mobile devices. Message and data rates may apply.    
+ 			<br />&nbsp;<br />
+			Apple, the Apple logo, and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries. Bank of America and the Bank of America logo are registered trademarks of Bank of America Corporation.
+ 			<br />&nbsp;<br />
+Bank of America, N.A. Member FDIC &copy;2022 Bank of America Corporation - MAP 5700850
+		</div>
+
+   		<p>
+        <a id="additional_resources_FC" href="https://flagscape.bankofamerica.com/portal/site/lob06020012/menuitem.13de91c2aea5d7e1397d8f6e55a71bba/?vgnextoid=d686852e34320510VgnVCM10000036ccc5abRCRD&amp;vgnextchannel=d686852e34320510VgnVCM10000036ccc5abRCRD&amp;vgnextfmt=default" target="_new">Additional Resources - FC</a>
+        <br />
+        <a id="additional_resources_CC" href="https://flagscape.bankofamerica.com/portal/site/lob09010059/menuitem.39035c61696978e198f26c10e3cc5cba/?vgnextoid=7e4c066779c81510VgnVCM100000eec8ab9eRCRD&amp;vgnextfmt=default&amp;mname=lob09010059_40288c12a70de110VgnVCM10000038ccc5abRCRD_440728709" target="_new">Additional Resources - CC</a>
+        </p>
+		<p>Updated 3/2024</p>
+	</div>
+
+    
+    <script>
+      $(document).ready(function() {
+		// Show/Hide Ts & Cs
+		$("#termsTrigger").click(function(){
+			$(this).toggleClass('open');
+
+			if($(this).hasClass('open')) {
+			/*$('.key_user_terms').animate({ top: '1%'}, 400);*/
+			$('.disclosure').animate({ top: '55%'}, 400);
+			$('#termsContainer').show();
+			}
+
+			else{
+			/*$('.key_user_terms').animate({ top: '5%'}, 400);*/
+			$('.disclosure').animate({ top: '65%'}, 400);
+			$('#termsContainer').hide();
+			}
+		});
+		// Mute all sounds - Erica
+		$('#sound_ctrl .muted').hide();
+		// Toggle mute buttons on screen and in simulator app
+		$("#sound_ctrl").click(function(){
+			$('#sound_ctrl .muted, #sound_ctrl .on').toggle();
+			/* trigger to affect Mobile Settings for Erica Voice toggle */ 
+			var erica_checkBoxes = document.getElementById('device_iframe').contentWindow.$("#erica-voice-toggle");
+			erica_checkBoxes.prop("checked", !erica_checkBoxes.prop("checked"));
+		});
+		
+		// switch between Android and iOS devices via Phone
+       /* $("#device").click(function() {
+    		$(this).find("img").toggleClass('transparent displayed');
+			$(this).find("div").toggleClass('transparent displayed');
+			$("iframe").hide().css("opacity",0);
+			setTimeout(function() {
+				$("iframe").toggleClass('iphone android');
+				$("iframe").show().animate({opacity: 1}, 200);
+			}, 1000);
+			document.getElementById('device_iframe').contentWindow.$("body").toggleClass('apple android');
+        });*/
+		
+		// switch between Android and iOS devices via new buttons
+		/*$('#device_ctrl a.device_btn_off').hide();*/
+		$("#device_ctrl").click(function() {
+			var $this = $(this);
+			$this.toggleClass("android_text");
+			if ($this.hasClass("android_text")) {
+				$('h1.desktop_title').html("Android App");
+			} else {
+				$('h1.desktop_title').html("iOS App");
+			}
+			$('#device_ctrl a').toggleClass('device_btn_off device_btn_on');
+    		$("#device").find("img").toggleClass('transparent displayed');
+			$("#device").find("div").toggleClass('transparent displayed');
+			$("iframe").hide().css("opacity",0);
+			setTimeout(function() {
+				$("iframe").toggleClass('iphone android');
+				$("iframe").show().animate({opacity: 1}, 200);
+			}, 1000);
+			document.getElementById('device_iframe').contentWindow.$("body").toggleClass('apple android');
+        });
+		
+		
+      });
+     </script>
+     
+</body>
+
+<!-- Mirrored from message.bankofamerica.com/onlinebanking_demo/mobileApp_Simulator/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Sep 2024 22:44:47 GMT -->
+</html>

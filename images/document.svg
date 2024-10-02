@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>FC283022-2225-4BA6-8E93-8BDA8C36052B</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="343" height="144" rx="12"></rect>
+        <filter x="-9.0%" y="-20.1%" width="118.1%" height="143.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Menu" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NBAA-Consumer" transform="translate(-32.000000, -387.000000)">
+            <rect fill="#FAFAFA" x="0" y="0" width="375" height="2231"></rect>
+            <g id="statements-and-documents" transform="translate(16.000000, 365.000000)">
+                <g id="card-background">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="iOS/section-header/large/subtitle-1-icon-left">
+                    <g id="background"></g>
+                    <g id="core/icon/utility/24" transform="translate(16.000000, 22.000000)" fill="#000000">
+                        <path d="M21,0 L21,18.5724 L15.7967857,24 L4,24 L4,0 L21,0 Z M19.7857143,1.2 L5.21428571,1.2 L5.21428571,22.8 L14.9285714,22.8 L14.9285714,18 L19.7857143,18 L19.7857143,1.2 Z M18.7256429,19.2 L16.1428571,19.2 L16.1428571,21.8952 L18.7256429,19.2 Z M14.1198571,15.6 L14.1198571,16.8 L7.64285714,16.8 L7.64285714,15.6 L14.1198571,15.6 Z M17.3571429,10.8 L17.3571429,12 L7.64285714,12 L7.64285714,10.8 L17.3571429,10.8 Z M17.3571429,6 L17.3571429,7.2 L7.64285714,7.2 L7.64285714,6 L17.3571429,6 Z" id="icon-document"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
