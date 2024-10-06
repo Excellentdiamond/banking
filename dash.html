@@ -68633,6 +68633,28 @@ Associate to<br />get personalized attention
         style="position: absolute; top: -50000px; width: 100em;" aria-hidden="true"></iframe>
     </div>
   </div>
+
+ <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll('.float_right');
+
+    elements.forEach(element => {
+        const value = parseFloat(element.getAttribute('data-value'));
+        const formattedValue = formatCurrency(value);
+        element.textContent = formattedValue;
+    });
+});
+
+// Function to format the currency
+function formatCurrency(value, locale = 'en-US', currency = 'USD') {
+    if (value === null || value === undefined || isNaN(value)) {
+        return 'N/A'; // Return N/A for invalid numbers
+    }
+    
+    return new Intl.NumberFormat(locale, { style: 'currency', currency }).format(value);
+}
+
+  </script>
 </body>
 
 </html>
